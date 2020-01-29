@@ -1,0 +1,190 @@
+/* ==== Main CSS Start ==== */
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	font-family: ;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0 0 15px;
+	font-weight: 700;
+}
+a:hover{
+	text-decoration: none;
+}
+/* ===== Main CSS Stop ===== */
+/* ====== Header & Mega Menu Section Start ======*/
+.header-area {
+  background-color: ;
+  padding: 20px 0;
+}
+.mainmenu ul {
+  list-style: none;
+  margin: 0;
+}
+.mainmenu ul li {
+  display: inline-block;
+}
+.mainmenu ul li a {
+  display: block;
+  padding: 12px;
+  font-size: 18px;
+  color: #999;
+  font-weight: 500;
+  margin-top: 0px;
+}
+.boxed-btn {
+  background-color: #24d5a1;
+  color: #fff;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 4px;
+  margin-top: 7px;
+  display: inline-block;
+}
+.mainmenu {
+  margin-top: 0;
+}
+/* ===== Dropdown Code ===== */
+.mainmenu ul li ul {
+  position: absolute;
+  left: 0;
+  top: 86px;
+  background: #fff;
+  width: 250px;
+  z-index: 99999999;
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  padding: 10px;
+  box-shadow: 0 0 5px #f6f6f6;
+}
+.mainmenu ul li {
+  position: relative;
+}
+.mainmenu ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top: 45px;
+}
+.mainmenu ul li ul li {
+  display: block;
+}
+.mainmenu ul li ul li a {
+  padding: 10px;
+}
+.mainmenu ul li:hover > a {
+  color: #24d5a1;
+}
+.mainmenu ul li:hover li:hover > a {
+  background: #24d5a1;
+  color: #fff;
+}
+/* =====Mega Menu Code ====== */
+.mainmenu ul li.mega-menu {
+  position: static;
+}
+.mega-menu-wrapper {
+  position: absolute;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  z-index: -1;
+  box-shadow: 0 0 5px #f5f5f5;
+  top: 86px;
+  opacity: 0;
+  visibility: hidden;
+  transition:.3s;
+}
+.mainmenu ul li.mega-menu ul {
+  position: relative;
+  left: auto;
+  top: auto;
+  opacity: 1;
+  visibility: visible;
+  padding: 0;
+  box-shadow: 0 0 0;
+  width: auto;
+}
+.mega-menu-wrapper .boxed-btn {
+  color: #fff;
+}
+.mainmenu ul li.mega-menu:hover .mega-menu-wrapper {
+  opacity: 1;
+  visibility: visible;
+  top: 45px;
+  z-index: 99;
+}
+.menu-cta p {
+  color: #999;
+  margin-bottom: 40px;
+}
+.mega-menu-wrapper h5 {
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	opacity: .5;
+	text-align: left;
+	padding-left: 10px;
+	color: teal;
+}
+.menu-cta h4 {
+  color: #666;
+  line-height: 28px;
+  font-size: 15px;
+}
+.menu-cta h4 span {
+  color: #24d5a1;
+  font-weight: 700;
+}
+/* ======= Header & Mega Menu Section Stop =====*/
+/* ===== Slider Section Star==========*/
+.slider-section {
+  background-image: url(../img/Pre-wedding.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 30px;
+  position: relative;
+  z-index: 1;
+}
+.bordered-btn {
+  display: inline-block;
+  background: #24d5a1;
+  color: #fff;
+  padding: 10px 30px;
+  font-weight: 700;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.slider-section h1 {
+  font-size: 50px;
+  color: orange;
+}
+.slider-section p {
+  max-width: 600px;
+  text-align: justify;
+  line-height: 1.8;
+}
+.slider-section:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #ddd;
+  z-index: -1;
+  opacity: 0.3;
+}
+/* ====== Slider Section Stop =======*/
